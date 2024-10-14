@@ -4,9 +4,10 @@
   "type": "module",
   "scripts": {
     "dev": "react-router dev",
-    "build": "npm run build:react-router && npm run build:tauri",
+    "build": "pnpm run build:react-router && pnpm run build:tauri",
     "build:react-router": "react-router build",
     "build:tauri": "tauri build",
+    "build:server": "react-router build",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
   },
