@@ -8,7 +8,7 @@
     "build:react-router": "react-router build",
     "build:tauri": "tauri build",
     "build:server": "react-router build",
-    "start": "react-router-serve ./build/server/index.js",
+    "start": "react-router-serve ./build/server/index.js --host 0.0.0.0 --port 3000",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
