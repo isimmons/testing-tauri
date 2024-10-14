@@ -22,6 +22,6 @@ fn main() {
       });
       Ok(())
     })
-    .run(tauri::generate_context!())
+    .run(tauri::Context::default())
     .expect("error while running tauri application");
 }
