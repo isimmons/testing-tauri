@@ -1,5 +1,4 @@
-const { spawn } = require("child_process");
-const path = require("path");
+import { spawn } from "child_process";
 
 const serverProcess = spawn("react-router-serve", ["./build/server/index.js"], {
   stdio: "inherit",
