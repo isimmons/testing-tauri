@@ -9,7 +9,7 @@
     "build:tauri": "tauri build",
     "build:server": "react-router build",
     "custom-start": "node scripts/serve.js",
-    "start": "conc \"react-router-serve ./build/server/index.js --host 0.0.0.0 --port 3000 --verbose  > server.log 2>&1 &\"",
+    "start": "node scripts/start-server.js",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
