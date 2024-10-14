@@ -7,7 +7,7 @@
     "frontendDist": "../build",
     "devUrl": "http://localhost:5173",
     "beforeDevCommand": "pnpm run start",
-    "beforeBuildCommand": "pnpm run build:server && pnpm run start && wait-on http://localhost:3000 && tauri build"
+    "beforeBuildCommand": "pnpm run build:server && pnpm run start && wait-on http://HOST:3000 && tauri build"
   },
   "app": {
     "windows": [
@@ -17,7 +17,7 @@
         "height": 600,
         "resizable": true,
         "fullscreen": false,
-        "url": "http://localhost:3000"
+        "url": "http://HOST:3000"
       }
     ],
     "security": {
