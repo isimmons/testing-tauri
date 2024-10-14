@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "identifier": "com.tauri.tauri-rr-demo",
   "build": {
-    "frontendDist": "../dist",
+    "frontendDist": "../build",
     "devUrl": "http://localhost:5173",
     "beforeDevCommand": "pnpm run dev",
     "beforeBuildCommand": "pnpm run build"
