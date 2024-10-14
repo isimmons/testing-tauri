@@ -8,7 +8,7 @@
     "build:react-router": "react-router build",
     "build:tauri": "tauri build",
     "build:server": "react-router build",
-    "start": "react-router-serve ./build/server/index.js --host 0.0.0.0 --port 3000 --verbose  > server.log 2>&1 &",
+    "start": "conc \"react-router-serve ./build/server/index.js --host 0.0.0.0 --port 3000 --verbose  > server.log 2>&1 &\"",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
@@ -27,6 +27,7 @@
     "@types/react": "^18.3.9",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",
+    "concurrently": "^9.0.1",
     "msw": "^2.4.10",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
