@@ -1,0 +1,1 @@
+import{w as t}from"./with-props-hBtPqlSC.js";import{l as e}from"./index-BEa8d1lQ.js";const l=()=>e.jsx("div",{className:"flex flex-col items-center justify-center h-screen",children:e.jsx("h1",{className:"text-4xl font-bold",children:"Hello"})}),r=t(l);export{r as default};
