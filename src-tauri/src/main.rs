@@ -2,12 +2,11 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 use std::process::Command;
-use tauri::Manager;
 
 fn main() {
   tauri::Builder::default()
     .setup(|app| {
-      let app_handle = app.handle();
+      let _app_handle = app.handle();
       tauri::async_runtime::spawn(async move {
         // Start the server
         let output = Command::new("node")
@@ -22,6 +21,6 @@ fn main() {
       });
       Ok(())
     })
-    .run(tauri::Context::default())
+    .run(tauri::generate_context!())
     .expect("error while running tauri application");
 }
